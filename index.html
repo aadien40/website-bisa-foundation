@@ -1,4 +1,8 @@
 
+
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#174ea6">
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -13,6 +17,16 @@
 * {
     box-sizing: border-box;
 }
+
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => console.log("PWA berhasil diaktifkan"))
+        .catch((error) => console.error("PWA error:", error));
+    });
+  }
+</script>
 
 body {
     font-family: Arial, sans-serif;
