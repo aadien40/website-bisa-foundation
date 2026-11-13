@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BISA FOUNDATION</title>
+
+    <style>
+       
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #263445;
+}
+
+/* HEADER */
+header {
+    background-color: #145DA0;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* MENU NAVIGASI */
+nav {
+    background-color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #102b46;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* KONTEN UTAMA */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+/* KARTU INFORMASI */
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #102b46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TAMPILAN TABLET */
+@media (min-width: 601px) and (max-width: 900px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        max-width: 750px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 12px;
+        padding: 15px 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 12px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BISA FOUNDATION</h1>
+        <p>BAKTI SEMESTA ALAM FOUNDATION</p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#informasi">Informasi</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main>
+
+        <section id="beranda" class="card">
+            <h2>Website ini berisi informasi tentang BISA FOUNDATION</h2>
+            <p>
+                Temukan informasi, wawasan, dan inspirasi
+                terbaru seputar dunia pendidikan.
+            </p>
+        </section>
+
+        <section id="artikel" class="card">
+            <h2>Artikel Pendidikan</h2>
+            <p>
+                Menyajikan artikel dan wawasan pendidikan
+                untuk guru, mahasiswa, dan masyarakat.
+            </p>
+        </section>
+
+        <section id="informasi" class="card">
+            <h2>Informasi Terbaru</h2>
+            <p>
+                Informasi kegiatan, pelatihan, webinar,
+                dan program pendidikan.
+            </p>
+        </section>
+
+        <section id="kontak" class="card">
+            <h2>Hubungi Kami</h2>
+            <p>Silakan hubungi kami untuk informasi lebih lanjut.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 BISA FOUNDATION</p>
+        <p>BAKTI SEMESTA ALAM FOUNDATION</p>
+    </footer>
+
+</body>
+</html>
